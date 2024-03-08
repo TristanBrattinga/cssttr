@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rubik's cube</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div class='space'>
+    <div class='cube'>
+        <div class='front-side side'></div>
+        <div class='back-side side'></div>
+        <div class='left-side side'></div>
+        <div class='right-side side'></div>
+        <div class='top-side side'></div>
+        <div class='bottom-side side'></div>
+    </div>
+</div>
+
+<form>
+    <label>
+        Rotate X:
+        <input type="range" min="0" max="360" step="1" value="0" name="rotatex" orient="horizontal">
+    </label>
+    <label>
+        Rotate Y:
+        <input type="range" min="0" max="360" step="1" value="0" name="rotatey" orient="horizontal">
+    </label>
+    <label>
+        Opacity:
+        <input type="range" min="0" max="1" step=".1" value="1" name="opacity" orient="horizontal">
+    </label>
+    <label>
+        Animate:
+        <input type="checkbox" name="animate" />
+    </label>
+</form>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
+
