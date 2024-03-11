@@ -46,32 +46,32 @@ body {
 
 .front-side {
     background-color: red;
-    transform: rotateY(0deg) translateZ(33px);
+    transform: rotateY(0deg) translateZ(33.3px);
 }
 
 .back-side {
     background-color: orange;
-    transform: rotateY(180deg) translateZ(33px);
+    transform: rotateY(180deg) translateZ(33.3px);
 }
 
 .left-side {
     background-color: green;
-    transform: rotateY(-90deg) translateZ(33px);
+    transform: rotateY(-90deg) translateZ(33.3px);
 }
 
 .right-side {
     background-color: blue;
-    transform: rotateY(90deg) translateZ(33px);
+    transform: rotateY(90deg) translateZ(33.3px);
 }
 
 .top-side {
     background-color: white;
-    transform: rotateX(90deg) translateZ(33px);
+    transform: rotateX(90deg) translateZ(33.3px);
 }
 
 .bottom-side {
     background-color: yellow;
-    transform: rotateX(-90deg) translateZ(33px);
+    transform: rotateX(-90deg) translateZ(33.3px);
 }
 
 /***********************/

@@ -10,15 +10,6 @@
 </head>
 <body>
 
-<!--
-    front: red
-    back: orange
-    left: green
-    right: blue
-    top: white
-    bottom: yellow
--->
-
 <div class='space'>
     <div class="rubik">
         <div class='cube cube1'>
@@ -134,6 +125,10 @@
 
 <form>
     <label>
+        Rotate one side:
+        <input type="checkbox" name="rotateSide">
+    </label>
+    <label>
         Rotate X:
         <input type="range" min="0" max="360" step="1" value="70" name="rotateX" orient="horizontal">
     </label>
@@ -147,7 +142,7 @@
     </label>
     <label>
         Opacity:
-        <input type="range" min="0" max="1" step=".1" value="1" name="opacity" orient="horizontal">
+        <input type="range" min="0" max="1" step=".1" value=".6" name="opacity" orient="horizontal">
     </label>
     <label>
         Animate:
