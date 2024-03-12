@@ -5,20 +5,60 @@
     --opacity: 0;
 }
 
+@font-face {
+    font-family: 'Doctor Glitch';
+    src: url("./assets/fonts/doctorGlitch.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: Helvetica, sans-serif;
-    background-color: lightblue;
+    font-family: "Doctor Glitch", Helvetica, sans-serif;
+    color: white;
+    background-color: black;
     position: relative;
+    overflow: hidden;
 }
 
-label {
+form {
+    display: flex;
+    flex-direction: row;
+    transform: translateX(14rem);
+    transition: all 0.3s ease-in-out;
     position: absolute;
-    left: 0;
+    right: 0;
+}
+
+form > label {
+    width: fit-content;
+    height: fit-content;
+    transform: rotateZ(-90deg);
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    margin: 40px -20px  0 0;
+}
+
+:root:has(input[name="openMenu"]:checked) form {
+    transform: translateX(0);
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[name="openMenu"] {
+    display: none;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -33,35 +73,32 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 label:has(input[name="rotateX"]) {
+    position: absolute;
     bottom: 50%;
     left: -5rem;
     transform: translateY(-50%) rotateZ(-90deg);
 }
 
 label:has(input[name="rotateZ"]) {
+    position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
 label:has(input[name="opacity"]) {
-    top: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-label:has(input[name="rotateSide"]) {
-    bottom: 2rem;
+    position: absolute;
     left: 2rem;
+    bottom: 2rem;
 }
 
-.space {
+body > div {
     perspective: 600px;
     width: 200px;
     height: 200px;
 }
 
-.rubik {
+body > div > div {
     width: 100%;
     height: 100%;
     position: relative;
@@ -69,19 +106,21 @@ label:has(input[name="rotateSide"]) {
     transform: translateZ(-100px) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
 }
 
-.cube {
+body > div > div > div {
     width: calc(100% / 3);
     height: calc(100% / 3);
     transform-style: preserve-3d;
     transition: all 1s ease;
 }
 
-[data-side="front-side"],
-[data-side="back-side"],
-[data-side="left-side"],
-[data-side="right-side"],
-[data-side="top-side"],
-[data-side="bottom-side"] {
+/*[data-side="front-side"],*/
+/*[data-side="back-side"],*/
+/*[data-side="left-side"],*/
+/*[data-side="right-side"],*/
+/*[data-side="top-side"],*/
+/*[data-side="bottom-side"]*/
+
+body > div > div > div div {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -121,134 +160,134 @@ label:has(input[name="rotateSide"]) {
 
 /***********************/
 
-.cube4 {
+body > div > div > div:nth-of-type(4) {
     transform: translateY(-200px) translateX(calc(200px / 3));
 }
 
-.cube5 {
+body > div > div > div:nth-of-type(5) {
     transform: translateY(-200px) translateX(calc(200px / 3));
 }
 
-.cube6 {
+body > div > div > div:nth-of-type(6) {
     transform: translateY(-200px) translateX(calc(200px / 3));
 }
 
-.cube7 {
+body > div > div > div:nth-of-type(7) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
 }
 
-.cube8 {
+body > div > div > div:nth-of-type(8) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
 }
 
-.cube9 {
+body > div > div > div:nth-of-type(9) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
 }
 
-.cube10 {
+body > div > div > div:nth-of-type(10) {
     transform: translateY(-600px) translateZ(calc(-200px / 3));
 }
 
-.cube11 {
+body > div > div > div:nth-of-type(11) {
     transform: translateY(-600px) translateZ(calc(-200px / 3));
 }
 
-.cube12 {
+body > div > div > div:nth-of-type(12) {
     transform: translateY(-600px) translateZ(calc(-200px / 3));
 }
 
-.cube13 {
+body > div > div > div:nth-of-type(13) {
     transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
 }
 
-.cube14 {
+body > div > div > div:nth-of-type(14) {
     transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
 }
 
-.cube15 {
+body > div > div > div:nth-of-type(15) {
     transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
 }
 
-.cube16 {
+body > div > div > div:nth-of-type(16) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
 }
 
-.cube17 {
+body > div > div > div:nth-of-type(17) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
 }
 
-.cube18 {
+body > div > div > div:nth-of-type(18) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
 }
 
-.cube19 {
+body > div > div > div:nth-of-type(19) {
     transform: translateY(-1200px) translateZ(calc(-400px / 3));
 }
 
-.cube20 {
+body > div > div > div:nth-of-type(20) {
     transform: translateY(-1200px) translateZ(calc(-400px / 3));
 }
 
-.cube21 {
+body > div > div > div:nth-of-type(21) {
     transform: translateY(-1200px) translateZ(calc(-400px / 3));
 }
 
-.cube22 {
+body > div > div > div:nth-of-type(22) {
     transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
 }
 
-.cube23 {
+body > div > div > div:nth-of-type(23) {
     transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
 }
 
-.cube24 {
+body > div > div > div:nth-of-type(24) {
     transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
 }
 
-.cube25 {
+body > div > div > div:nth-of-type(25) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
 }
 
-.cube26 {
+body > div > div > div:nth-of-type(26) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
 }
 
-.cube27 {
+body > div > div > div:nth-of-type(27) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube7 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(7) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube8 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(8) {
     transform: translateY(-466px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube9 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(9) {
     transform: translateY(-533px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube16 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(16) {
     transform: translateY(-933px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube17 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(17) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube18 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(18) {
     transform: translateY(-1066px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube25 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(25) {
     transform: translateY(-1466px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube26 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(26) {
     transform: translateY(-1533px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) .cube27 {
+:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(27) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
