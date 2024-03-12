@@ -12,20 +12,47 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Helvetica, sans-serif;
+    background-color: lightblue;
+    position: relative;
 }
 
-form {
-    display: flex;
-    align-self: start;
-    flex-direction: column;
-    gap: 1rem;
+label {
+    position: absolute;
+    left: 0;
 }
 
-form label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    user-select: none;
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+label:has(input[name="rotateX"]) {
+    bottom: 50%;
+    left: -5rem;
+    transform: translateY(-50%) rotateZ(-90deg);
+}
+
+label:has(input[name="rotateZ"]) {
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+label:has(input[name="opacity"]) {
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+label:has(input[name="rotateSide"]) {
+    bottom: 2rem;
+    left: 2rem;
 }
 
 .space {
@@ -49,7 +76,12 @@ form label {
     transition: all 1s ease;
 }
 
-.side {
+[data-side="front-side"],
+[data-side="back-side"],
+[data-side="left-side"],
+[data-side="right-side"],
+[data-side="top-side"],
+[data-side="bottom-side"] {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -57,32 +89,32 @@ form label {
     opacity: var(--opacity, 0.5);
 }
 
-.front-side {
+[data-side="front-side"] {
     background-color: red;
     transform: rotateY(0deg) translateZ(calc(100px / 3));
 }
 
-.back-side {
+[data-side="back-side"] {
     background-color: orange;
     transform: rotateY(180deg) translateZ(calc(100px / 3));
 }
 
-.left-side {
+[data-side="left-side"] {
     background-color: green;
     transform: rotateY(-90deg) translateZ(calc(100px / 3));
 }
 
-.right-side {
+[data-side="right-side"] {
     background-color: blue;
     transform: rotateY(90deg) translateZ(calc(100px / 3));
 }
 
-.top-side {
+[data-side="top-side"] {
     background-color: white;
     transform: rotateX(90deg) translateZ(calc(100px / 3));
 }
 
-.bottom-side {
+[data-side="bottom-side"] {
     background-color: yellow;
     transform: rotateX(-90deg) translateZ(calc(100px / 3));
 }

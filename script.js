@@ -7,7 +7,7 @@ const updateRange = range => {
   const rangeValue = range.value;
   // a custom property is set on the HTML element
 
-  if (rangeName === 'rotateX' || rangeName === 'rotateY' || rangeName === 'rotateZ') {
+  if (rangeName === 'rotateX' || rangeName === 'rotateZ') {
     document.documentElement.style.setProperty("--"+rangeName, rangeValue+"deg");
   } else {
     document.documentElement.style.setProperty("--"+rangeName, rangeValue);
