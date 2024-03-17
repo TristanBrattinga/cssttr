@@ -8,8 +8,8 @@ This is the process report for the CSS to the Rescue course. This course was giv
 
 ## Assignment
 
-The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and no
-JavaScript. In the first lesson we were given the four options to choose from. These were:
+The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and **NO
+JavaScript**. In the first lesson we were given the four options to choose from. These were:
 
 <ul>
     <li>Make a control panel</li>
