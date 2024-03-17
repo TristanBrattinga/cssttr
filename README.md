@@ -56,7 +56,7 @@ These are the steps I took to make my Rubik's Cube:
     <li>Control the cube using range inputs</li>
     <li>Build the full Rubik's Cube</li>
     <li>Rotate one side of the Rubik's Cube</li>
-    <li>== .... More to come == </li>
+    <li><mark>.... More to come</mark></li>
 </ol>
 
 ### Build a single cube in 3D
@@ -66,6 +66,30 @@ this assignment. The first step was to figure out how to make a cube in 3D. I fo
 3D in CSS. Here I got introduced to perspective, 3D transform functions and making 3D objects. I followed the tutorial
 all the way to learning how to create a cube in CSS. This course was really helpful for me. It instructed every step
 very clearly and went in to detail of how 3D in CSS works.
+
+To define a 3D CSS you're defining a space or a scene in which the 3D takes place. To do this the given element should
+have a perspective applied. This can be done in two ways:
+
+The first method is by using the perspective function
+
+```css
+.element {
+    transform: perspective(400px);
+}
+```
+
+The second method is by using the perspective property
+
+```css
+.element {
+    perspective: 400px;
+}
+```
+
+When you work with more than one element that needs the same vanishing point (perspective), the first functional option
+doesn't work out well. Every element gets its own perspective applied and the elements don't line up together. For my
+use case of making a cube every panel or side needs to have the same perspective. This means I will have to work with
+the second notation. 
 
 ## Sources
 
