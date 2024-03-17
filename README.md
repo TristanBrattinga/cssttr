@@ -281,6 +281,8 @@ ranges.forEach(range => {
 });
 ```
 
+<img src="./readme-images/rotate.gif" alt="">
+
 ## Workshops
 
 ## Result
