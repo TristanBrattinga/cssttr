@@ -74,7 +74,7 @@ These are the steps I took to make my Rubik's Cube:
     <li><mark>.... More to come</mark></li>
 </ol>
 
-### Build a single cube in 3D
+### Step 1: Build a single cube in 3D
 
 Before I started this assignment, I had no idea how to work with 3D in CSS. This is also one of the reasons why I chose
 this assignment. The first step was to figure out how to make a cube in 3D. I found this website that gives an intro to
@@ -247,9 +247,10 @@ Here is the CSS to apply to every side and complete the cube. We now have the re
 }
 ```
 
-<div id="rangeCode"></div>
+---
 
-### Control the cube using range inputs
+### Step 2: Control the cube using range inputs
+<div id="rangeCode"></div>
 
 The next step for me to do is making the cube rotate by listening to the range inputs. This can only be done by
 using JavaScript and is also the only piece of JS code allowed in this course. In my case the range inputs need to pass
@@ -287,6 +288,12 @@ ranges.forEach(range => {
 #### The Result
 
 <img src="./readme-images/rotate.gif" alt="" style="width: 50%">
+
+---
+
+### Step 3: Build the full Rubik's Cube
+
+Now the fun (and hard) part begins.
 
 ## Workshops
 
