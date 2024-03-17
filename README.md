@@ -190,6 +190,7 @@ Here I used position absolute, but Sanne 't Hooft showed me another way of doing
 
 Since the 3D effect is applied to the scene and we want to pass the 3D effect down to it is children it is required to
 apply the property `transform-style: preserve-3d` to the `.cube`.
+
 ---
 
 Now it is time to build my cube. Every side needs to be rotated in their correct position to form the cube. I also apply
