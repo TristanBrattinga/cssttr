@@ -67,7 +67,7 @@ When I completed the math problem I was confident again about my mathematical ab
 
 These are the steps I took to make my Rubik's Cube:
 <ol>
-    <li>Build one single cube in 3D</li>
+    <li>Build a single cube in 3D</li>
     <li>Control the cube using range inputs</li>
     <li>Build the full Rubik's Cube</li>
     <li>Rotate one side of the Rubik's Cube</li>
@@ -82,7 +82,7 @@ this assignment. The first step was to figure out how to make a cube in 3D. I fo
 all the way to learning how to create a cube in CSS. This course was really helpful for me. It instructed every step
 very clearly and went in to detail of how 3D in CSS works.
 
-### Perspective
+#### Perspective
 
 To define a 3D CSS you're defining a space or a scene in which the 3D takes place. To do this the given element should
 have a perspective applied. The intensity of the 3D effect is determined by the value of perspective. Consider
@@ -110,7 +110,7 @@ doesn't work out well. Every element gets its own perspective applied and the el
 use case of making a cube every panel or side needs to have the same perspective. This means I will have to work with
 the second notation.
 
-### 3D Transform Functions
+#### 3D Transform Functions
 
 Because I am now working with three dimensions there are some other function to get to know and to work with. These are:
 
@@ -127,7 +127,7 @@ different effects.
 
 <img src="./readme-images/transform.png" alt="Schematic overview of different 3d transform effects">
 
-### Building a Cube
+#### Building a Cube
 
 To build a cube in 3D I first started by setting up my HTML. This was fairly easy to do, because a cube has 6 faces. In
 the tutorial I learned that it is a good practice to separate the 3D space and the 3D object. By doing this the code is
@@ -193,6 +193,7 @@ Here I used position absolute, but Sanne 't Hooft showed me another way of doing
 ```
 
 ---
+
 **Important!**
 
 Since the 3D effect is applied to the scene and we want to pass the 3D effect down to it is children it is required to
@@ -248,9 +249,11 @@ Here is the CSS to apply to every side and complete the cube. We now have the re
 
 <div id="rangeCode"></div>
 
-Now the final step for me to do is making the cube rotate by listening to the range inputs. This can only be done by
+### Control the cube using range inputs
+
+The next step for me to do is making the cube rotate by listening to the range inputs. This can only be done by
 using JavaScript and is also the only piece of JS code allowed in this course. In my case the range inputs need to pass
-a degree to the rotates custom properties and number value to the opacity custom property. That is why I added the
+a degree value to the rotates custom properties and number value to the opacity custom property. That is why I added the
 conditional statement of when the rangeName is one of the rotates, it adds the degree unit behind it.
 
 ```javascript
@@ -281,7 +284,9 @@ ranges.forEach(range => {
 });
 ```
 
-<img src="./readme-images/rotate.gif" alt="">
+#### The Result
+
+<img src="./readme-images/rotate.gif" alt="" style="width: 50%">
 
 ## Workshops
 
