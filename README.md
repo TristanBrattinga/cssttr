@@ -6,11 +6,18 @@ This is the process report for the CSS to the Rescue course. This course was giv
 <li>Nils Binder</li>
 <li>Roel Nieskens</li>
 
+Legend:
+
+- Assignment:
+- Process
+- Workshops
+- Result
+- Sources
+
 ## Assignment
 
-The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and *
-*NO
-JavaScript**. In the first lesson we were given the four options to choose from. These were:
+The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and
+**NO JavaScript**. In the first lesson we were given the four options to choose from. These were:
 
 <ul>
     <li>Make a control panel</li>
@@ -28,7 +35,7 @@ problem to solve, and it went as follows:
 gives them two options for payment: 1. Receive €80 every day; 2. Receive €0,01 on the first day and have it be
 multiplied every next day."
 
-Which is the better option to choose?
+**Which is the better option to choose?**
 
 Since I had not really done any math for over 5/6 years, the problem was a bit harder for me than I hoped. One thing I
 knew for sure was that the first option uses linear growth and the second options uses exponential growth. Since
@@ -98,7 +105,7 @@ the second notation.
 
 ### 3D Transform Functions
 
-Because I am now working with three dimensions there are some other function to get to know and to work with. These are
+Because I am now working with three dimensions there are some other function to get to know and to work with. These are:
 
 <ul>
     <li>translateZ(px)</li>
@@ -107,10 +114,65 @@ Because I am now working with three dimensions there are some other function to 
     <li>rotateZ(deg)</li>
 </ul>
 
-To fully understand and see the effect applied by these functions I have made a little codepen which showcases the
+To fully understand and see the effects applied by these functions I have made a
+little <a href="https://codepen.io/crazyivan117/pen/gOyLdZR">codepen</a> which showcases the
 different effects.
 
 <img src="./readme-images/transform.png" alt="Schematic overview of different 3d transform effects">
+
+### Building a Cube
+
+To build a cube in 3D I first started by setting up my HTML. This was fairly easy to do, because a cube has 6 faces. In
+the tutorial I learned that it is a good practice to separate the 3D space and the 3D object. By doing this the code is
+easier to read, style and understand. The HTML for the single cube will look something like this:
+
+```html
+
+<div class='space'>
+    <div class='cube'>
+        <div class='front-side side'>Front</div>
+        <div class='back-side side'>Back</div>
+        <div class='left-side side'>Left</div>
+        <div class='right-side side'>Right</div>
+        <div class='top-side side'>Top</div>
+        <div class='bottom-side side'>Bottom</div>
+    </div>
+</div>
+```
+
+Now for the styling, I start by applying some basic styling to the sides:
+
+```css
+.space {
+    perspective: 600px;
+    width: 200px;
+    height: 200px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px);
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    opacity: 0.5;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+```
+
+
 
 ## Workshops
 
