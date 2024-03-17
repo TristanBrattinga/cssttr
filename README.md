@@ -172,7 +172,23 @@ Now for the styling, I start by applying some basic styling to the sides:
 }
 ```
 
+This first styling defines the dimensions for the 3D space and positions every side of the cube on top of each other.
+Here I used position absolute, but Sanne 't Hooft showed me another way of doing this by defining a grid area.
 
+```css
+.cube {
+    display: grid;
+}
+
+.side {
+    grid-area: 1/1;
+}
+```
+
+**Important!**
+
+Since the 3D effect is applied to the scene and we want to pass the 3D effect down to it is children it is required to
+apply the property `transform-style: preserve-3d` to the `.cube`.
 
 ## Workshops
 
