@@ -199,22 +199,10 @@ out to the side of the cube, I apply a `translateZ(100px)` to every side. It is 
 height and width and from the center of the cube it needs half the distance. If you don't do this your cube will look
 like the second image.
 
-<div style="display: flex;">
-<figure style="width: 33.3%">
-    <img src="./readme-images/cube1.png" alt="" style="width: 100%; height: 100%"/>
-    <figcaption>1. Position all the sides on top of each other</figcaption>
-</figure>
-    
-<figure style="width: 33.3%">
-    <img src="./readme-images/cube2.png" alt="" style="width: 100%; height: 100%"/>
-    <figcaption></figcaption>
-</figure>
-
-
-<figure style="width: 33.3%">
-    <img src="./readme-images/cube3.png" alt="" style="width: 100%; height: 100%"/>
-    <figcaption></figcaption>
-</figure>
+<div style="display: flex; gap: 10px">
+    <img src="./readme-images/cube1.png" alt="" style="width: 33.3%">
+    <img src="./readme-images/cube2.png" alt="" style="width: 33.3%">
+    <img src="./readme-images/cube3.png" alt="" style="width: 33.3%">
 </div>
 
 ```css
