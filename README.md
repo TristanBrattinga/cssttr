@@ -29,8 +29,6 @@ multiplied every next day."
 
 Which is the better option to choose?
 
----
-
 Since I had not really done any math for over 5/6 years, the problem was a bit harder for me than I hoped. One thing I
 knew for sure was that the first option uses linear growth and the second options uses exponential growth. Since
 exponential growth always becomes more in value faster that linear growth, this would definitely be the option to
@@ -47,6 +45,8 @@ f(x) = ab^x
 [//]: # (FINISH THIS PART ABOUT MATH PROBLEM)
 
 When I completed the math problem I was confident again about my mathematical ability. I was ready to take on the Cube!
+
+### Further Requirements
 
 ## Process
 
