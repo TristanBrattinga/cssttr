@@ -56,7 +56,7 @@ These are the steps I took to make my Rubik's Cube:
     <li>Control the cube using range inputs</li>
     <li>Build the full Rubik's Cube</li>
     <li>Rotate one side of the Rubik's Cube</li>
-    <li><mark>.... More to come</mark></li>
+    <li>== .... More to come == </li>
 </ol>
 
 ### Build a single cube in 3D
