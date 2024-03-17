@@ -1,0 +1,57 @@
+/*CODE FROM SANNE 'T HOOFT - WORKSHOP MODES STYLE QUERY COLOR THEMES */
+
+/* prefers-color-scheme:dark */
+@media (prefers-color-scheme: dark) {
+    --colors: dark;
+}
+
+
+/* prefers-color-scheme:light */
+@media (prefers-color-scheme: light) {
+    --colors: light;
+}
+
+/* system checked --> nada */
+html:has([value="system"]:checked) {
+    /* niks	 */
+}
+
+
+/* dark checked */
+html:has([value="dark"]:checked) {
+    --colors: dark;
+}
+
+
+/* light checked */
+html:has([value="light"]:checked) {
+    --colors: light;
+}
+
+/**********/
+/* THEMES */
+/**********/
+
+/* default / dark theme */
+body {
+    color-scheme:dark;
+    --bg-body:black;
+    --glow-color:crimson;
+    --text-color: white;
+}
+
+
+/* light theme */
+
+@container style(--colors: light) {
+    body {
+        color-scheme:light;
+        --bg-body: lightblue;
+        --glow-color:lime;
+        --text-color: black;
+    }
+}
+
+input[name="theme"] {
+    display: none;
+}

@@ -1,35 +1,124 @@
+@import "./sliders.css";
+@import "./theme.css";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
 :root {
     --rotateX: 0;
     --rotateY: 0;
     --rotateZ: 0;
-    --opacity: 0;
+}
+
+header section {
+    display: flex;
+    gap: 2px;
+}
+
+header section label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+header section label svg path {
+    fill: var(--text-color);
+}
+
+header section label:hover {
+    background-color: grey;
+}
+
+header section label:focus-visible {
+    background-color: grey;
 }
 
 @font-face {
     font-family: 'Doctor Glitch';
-    src: url("./assets/fonts/doctorGlitch.otf") format('opentype');
+    src: url("../assets/fonts/doctorGlitch.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     font-family: "Doctor Glitch", Helvetica, sans-serif;
-    color: white;
-    background-color: black;
+    color: var(--text-color);
     position: relative;
-    overflow: hidden;
+    background-color: var(--bg-body);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+main {
+    height: calc(100vh - 60px);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 8rem;
+    aspect-ratio: 1;
+}
+
+article:nth-of-type(1) {
+    background-color: #C6E2E9;
+}
+
+article:nth-of-type(2) {
+    background-color: #FFCAAF;
+}
+
+article:nth-of-type(3) {
+    background-color: #DAB894;
+}
+
+article:nth-of-type(4) {
+    background-color: #EDDEA4;
+}
+
+article:nth-of-type(5) {
+    background-color: #A7BED3;
+}
+
+article:nth-of-type(6) {
+    background-color: #84BC9C;
+}
+
+article:nth-of-type(7) {
+    background-color: #D972FF;
 }
 
 form {
     display: flex;
     flex-direction: row;
-    transform: translateX(14rem);
+    /*transform: translateX(14rem);*/
     transition: all 0.3s ease-in-out;
     position: absolute;
     right: 0;
@@ -44,7 +133,7 @@ form > label {
     border: 1px solid white;
     border-radius: 10px 10px 0 0;
     padding: 10px;
-    margin: 40px -20px  0 0;
+    margin: 40px -20px 0 0;
 }
 
 :root:has(input[name="openMenu"]:checked) form {
@@ -57,20 +146,24 @@ form fieldset {
     gap: 1rem;
 }
 
-input[name="openMenu"] {
-    display: none;
-}
+/*input[type=range]::-webkit-slider-thumb {*/
+/*    -webkit-appearance: none;*/
+/*    border: 1px solid #000000;*/
+/*    height: 36px;*/
+/*    width: 16px;*/
+/*    border-radius: 0;*/
+/*    background: #ffffff;*/
+/*    cursor: pointer;*/
+/*    margin-top: -4px; !* You need to specify a margin in Chrome, but in Firefox and IE it is automatic *!*/
+/*}*/
 
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid #000000;
-    height: 36px;
-    width: 16px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-}
+/*input[type=range]::-webkit-slider-runnable-track {*/
+/*    width: 100%;*/
+/*    height: 8.4px;*/
+/*    cursor: pointer;*/
+/*    background: #3071a9;*/
+/*    border-radius: 0;*/
+/*}*/
 
 label:has(input[name="rotateX"]) {
     position: absolute;
@@ -86,19 +179,13 @@ label:has(input[name="rotateZ"]) {
     transform: translateX(-50%);
 }
 
-label:has(input[name="opacity"]) {
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
-}
-
-body > div {
+main > div {
     perspective: 600px;
     width: 200px;
     height: 200px;
 }
 
-body > div > div {
+main > div > div {
     width: 100%;
     height: 100%;
     position: relative;
@@ -106,26 +193,23 @@ body > div > div {
     transform: translateZ(-100px) rotateX(var(--rotateX)) rotateY(var(--rotateY)) rotateZ(var(--rotateZ));
 }
 
-body > div > div > div {
+main > div > div > div {
     width: calc(100% / 3);
     height: calc(100% / 3);
     transform-style: preserve-3d;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
-/*[data-side="front-side"],*/
-/*[data-side="back-side"],*/
-/*[data-side="left-side"],*/
-/*[data-side="right-side"],*/
-/*[data-side="top-side"],*/
-/*[data-side="bottom-side"]*/
-
-body > div > div > div div {
+[data-side="front-side"],
+[data-side="back-side"],
+[data-side="left-side"],
+[data-side="right-side"],
+[data-side="top-side"],
+[data-side="bottom-side"] {
     width: 100%;
     height: 100%;
     position: absolute;
     border: 1px solid black;
-    opacity: var(--opacity, 0.5);
 }
 
 [data-side="front-side"] {
@@ -160,134 +244,136 @@ body > div > div > div div {
 
 /***********************/
 
-body > div > div > div:nth-of-type(4) {
+main > div > div > div:nth-of-type(4) {
     transform: translateY(-200px) translateX(calc(200px / 3));
 }
 
-body > div > div > div:nth-of-type(5) {
+main > div > div > div:nth-of-type(5) {
     transform: translateY(-200px) translateX(calc(200px / 3));
 }
 
-body > div > div > div:nth-of-type(6) {
+main > div > div > div:nth-of-type(6) {
     transform: translateY(-200px) translateX(calc(200px / 3));
 }
 
-body > div > div > div:nth-of-type(7) {
+main > div > div > div:nth-of-type(7) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
 }
 
-body > div > div > div:nth-of-type(8) {
+main > div > div > div:nth-of-type(8) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
 }
 
-body > div > div > div:nth-of-type(9) {
+main > div > div > div:nth-of-type(9) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
 }
 
-body > div > div > div:nth-of-type(10) {
+main > div > div > div:nth-of-type(10) {
     transform: translateY(-600px) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(11) {
+main > div > div > div:nth-of-type(11) {
     transform: translateY(-600px) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(12) {
+main > div > div > div:nth-of-type(12) {
     transform: translateY(-600px) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(13) {
+main > div > div > div:nth-of-type(13) {
     transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(14) {
+main > div > div > div:nth-of-type(14) {
     transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(15) {
+main > div > div > div:nth-of-type(15) {
     transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(16) {
+main > div > div > div:nth-of-type(16) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(17) {
+main > div > div > div:nth-of-type(17) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(18) {
+main > div > div > div:nth-of-type(18) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
 }
 
-body > div > div > div:nth-of-type(19) {
+main > div > div > div:nth-of-type(19) {
     transform: translateY(-1200px) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(20) {
+main > div > div > div:nth-of-type(20) {
     transform: translateY(-1200px) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(21) {
+main > div > div > div:nth-of-type(21) {
     transform: translateY(-1200px) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(22) {
+main > div > div > div:nth-of-type(22) {
     transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(23) {
+main > div > div > div:nth-of-type(23) {
     transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(24) {
+main > div > div > div:nth-of-type(24) {
     transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(25) {
+main > div > div > div:nth-of-type(25) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(26) {
+main > div > div > div:nth-of-type(26) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
 }
 
-body > div > div > div:nth-of-type(27) {
+main > div > div > div:nth-of-type(27) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(7) {
+/* ROTEREN */
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(7) {
     transform: translateY(-400px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(8) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(8) {
     transform: translateY(-466px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(9) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(9) {
     transform: translateY(-533px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(16) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(16) {
     transform: translateY(-933px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(17) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(17) {
     transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(18) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(18) {
     transform: translateY(-1066px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(25) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(25) {
     transform: translateY(-1466px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(26) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(26) {
     transform: translateY(-1533px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
 }
 
-:root:has(input[name="rotateSide"]:checked) body > div > div > div:nth-of-type(27) {
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(27) {
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
