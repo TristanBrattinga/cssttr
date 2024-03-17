@@ -68,6 +68,8 @@ this assignment. The first step was to figure out how to make a cube in 3D. I fo
 all the way to learning how to create a cube in CSS. This course was really helpful for me. It instructed every step
 very clearly and went in to detail of how 3D in CSS works.
 
+### Perspective
+
 To define a 3D CSS you're defining a space or a scene in which the 3D takes place. To do this the given element should
 have a perspective applied. The intensity of the 3D effect is determined by the value of perspective. Consider
 perspective as the distance between the viewer and the object; the higher the value, the greater the distance, the less
@@ -94,6 +96,22 @@ doesn't work out well. Every element gets its own perspective applied and the el
 use case of making a cube every panel or side needs to have the same perspective. This means I will have to work with
 the second notation.
 
+### 3D Transform Functions
+
+Because I am now working with three dimensions there are some other function to get to know and to work with. These are
+
+<ul>
+    <li>translateZ(px)</li>
+    <li>rotateX(deg)</li>
+    <li>rotateY(deg)</li>
+    <li>rotateZ(deg)</li>
+</ul>
+
+To fully understand and see the effect applied by these functions I have made a little codepen which showcases the
+different effects.
+
+<img src="./readme-images/transform.png" alt="Schematic overview of different 3d transform effects">
+
 ## Workshops
 
 ## Result
@@ -102,4 +120,5 @@ the second notation.
 
 <ul>
     <li>Perspective · Intro to CSS 3D transforms. (n.d.). https://3dtransforms.desandro.com/perspective</li>
+    <li>CSS: Cascading Style Sheets | MDN. (2024, January 2). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function</li>
 </ul>
