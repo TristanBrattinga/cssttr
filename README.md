@@ -56,6 +56,13 @@ When I completed the math problem I was confident again about my mathematical ab
 
 ### Further Requirements
 
+<ul>
+    <li>No JavaScript, range input code excluded. <a href="#rangeCode">Read more</a>.</li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
 ## Process
 
 These are the steps I took to make my Rubik's Cube:
@@ -205,6 +212,8 @@ like the second image.
     <img src="./readme-images/cube3.png" alt="" style="width: 33.3%">
 </div>
 
+Here is the CSS to apply to every side and complete the cube. We now have the result shown on the third image!
+
 ```css
 .front-side {
     background-color: red;
@@ -235,6 +244,41 @@ like the second image.
     background-color: yellow;
     transform: rotateX(-90deg) translateZ(100px);
 }
+```
+
+<div id="rangeCode"></div>
+
+Now the final step for me to do is making the cube rotate by listening to the range inputs. This can only be done by
+using JavaScript and is also the only piece of JS code allowed in this course. In my case the range inputs need to pass
+a degree to the rotates custom properties and number value to the opacity custom property. That is why I added the
+conditional statement of when the rangeName is one of the rotates, it adds the degree unit behind it.
+
+```javascript
+const ranges = document.querySelectorAll('[type="range"]');
+
+const updateRange = range => {
+  // the name of the custom property is the name of the input
+  const rangeName  = range.name;
+  // the value of the custom property is the value of the input
+  const rangeValue = range.value;
+  // a custom property is set on the HTML element
+
+  if (rangeName === 'rotatex' || rangeName === 'rotatey' || rangeName === 'rotatez') {
+    document.documentElement.style.setProperty("--" + rangeName, rangeValue + "deg");
+  } else {
+    document.documentElement.style.setProperty("--" + rangeName, rangeValue);
+  }
+}
+
+ranges.forEach(range => {
+  // the custom property is set initially after loading the document
+  updateRange(range);
+
+  // the custom property is updated when the input is changed
+  range.oninput = () => {
+    updateRange(range)
+  };
+});
 ```
 
 ## Workshops
