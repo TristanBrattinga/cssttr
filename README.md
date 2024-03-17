@@ -46,15 +46,26 @@ f(x) = ab^x
 
 [//]: # (FINISH THIS PART ABOUT MATH PROBLEM)
 
-When I completed the math problem I was confident again about my mathematical ability. I was ready to take on the Cube! 
+When I completed the math problem I was confident again about my mathematical ability. I was ready to take on the Cube!
 
 ## Process
 
-Before I started this assignment, I had no idea how to work with 3D in CSS. My first step was
-so basically to figure out how to make a cube in 3D. I started looking up how to work with 3D in CSS.
-I came across a website that provides an intro to 3D in CSS.
+These are the steps I took to make my Rubik's Cube:
+<ol>
+    <li>Build one single cube in 3D</li>
+    <li>Control the cube using range inputs</li>
+    <li>Build the full Rubik's Cube</li>
+    <li>Rotate one side of the Rubik's Cube</li>
+    <li><mark>.... More to come</mark></li>
+</ol>
 
-Here I followed the tutorial step by step.
+### Build a single cube in 3D
+
+Before I started this assignment, I had no idea how to work with 3D in CSS. This is also one of the reasons why I chose
+this assignment. The first step was to figure out how to make a cube in 3D. I found this website that gives an intro to
+3D in CSS. Here I got introduced to perspective, 3D transform functions and making 3D objects. I followed the tutorial
+all the way to learning how to create a cube in CSS. This course was really helpful for me. It instructed every step
+very clearly and went in to detail of how 3D in CSS works.
 
 ## Sources
 
