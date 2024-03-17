@@ -8,7 +8,8 @@ This is the process report for the CSS to the Rescue course. This course was giv
 
 ## Assignment
 
-The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and **NO
+The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and *
+*NO
 JavaScript**. In the first lesson we were given the four options to choose from. These were:
 
 <ul>
@@ -68,7 +69,9 @@ all the way to learning how to create a cube in CSS. This course was really help
 very clearly and went in to detail of how 3D in CSS works.
 
 To define a 3D CSS you're defining a space or a scene in which the 3D takes place. To do this the given element should
-have a perspective applied. This can be done in two ways:
+have a perspective applied. The intensity of the 3D effect is determined by the value of perspective. Consider
+perspective as the distance between the viewer and the object; the higher the value, the greater the distance, the less
+intense the visual effect (<i>Perspective · Intro to CSS 3D Transforms</i>, n.d.). This can be done in two ways:
 
 The first method is by using the perspective function
 
@@ -89,7 +92,7 @@ The second method is by using the perspective property
 When you work with more than one element that needs the same vanishing point (perspective), the first functional option
 doesn't work out well. Every element gets its own perspective applied and the elements don't line up together. For my
 use case of making a cube every panel or side needs to have the same perspective. This means I will have to work with
-the second notation. 
+the second notation.
 
 ## Workshops
 
@@ -98,5 +101,5 @@ the second notation.
 ## Sources
 
 <ul>
-  <li>https://3dtransforms.desandro.com/</li>
+    <li>Perspective · Intro to CSS 3D transforms. (n.d.). https://3dtransforms.desandro.com/perspective</li>
 </ul>
