@@ -194,7 +194,28 @@ apply the property `transform-style: preserve-3d` to the `.cube`.
 ---
 
 Now it is time to build my cube. Every side needs to be rotated in their correct position to form the cube. I also apply
-the correct colors of the Rubik's Cube to every side.
+the correct colors of the Rubik's Cube to every side. To make sure that the sides are in their correct place and pushed
+out to the side of the cube, I apply a `translateZ(100px)` to every side. It is a 100px because every side is 200px in
+height and width and from the center of the cube it needs half the distance. If you don't do this your cube will look
+like the second image.
+
+<div style="display: flex;">
+<figure style="width: 33.3%">
+    <img src="./readme-images/cube1.png" alt="" style="width: 100%; height: 100%"/>
+    <figcaption>1. Position all the sides on top of each other</figcaption>
+</figure>
+    
+<figure style="width: 33.3%">
+    <img src="./readme-images/cube2.png" alt="" style="width: 100%; height: 100%"/>
+    <figcaption></figcaption>
+</figure>
+
+
+<figure style="width: 33.3%">
+    <img src="./readme-images/cube3.png" alt="" style="width: 100%; height: 100%"/>
+    <figcaption></figcaption>
+</figure>
+</div>
 
 ```css
 .front-side {
