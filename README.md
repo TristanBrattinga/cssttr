@@ -140,7 +140,7 @@ easier to read, style and understand. The HTML for the single cube will look som
 </div>
 ```
 
-Now for the styling, I start by applying some basic styling to the sides:
+To make the first setup for building the cube I have applied this styling:
 
 ```css
 .space {
@@ -185,10 +185,47 @@ Here I used position absolute, but Sanne 't Hooft showed me another way of doing
 }
 ```
 
+---
 **Important!**
 
 Since the 3D effect is applied to the scene and we want to pass the 3D effect down to it is children it is required to
 apply the property `transform-style: preserve-3d` to the `.cube`.
+---
+
+Now it is time to build my cube. Every side needs to be rotated in their correct position to form the cube. I also apply
+the correct colors of the Rubik's Cube to every side.
+
+```css
+.front-side {
+    background-color: red;
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.back-side {
+    background-color: orange;
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.left-side {
+    background-color: green;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right-side {
+    background-color: blue;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top-side {
+    background-color: white;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom-side {
+    background-color: yellow;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+```
 
 ## Workshops
 
