@@ -50,6 +50,7 @@ body {
     color: var(--text-color);
     position: relative;
     background-color: var(--bg-body);
+    overflow: hidden;
 }
 
 h1 {
@@ -148,18 +149,25 @@ form fieldset {
     gap: 1rem;
 }
 
-label:has(input[name="rotateX"]) {
+label:has(input[name="rx"]) {
     position: absolute;
     bottom: 50%;
     left: -5rem;
     transform: translateY(-50%) rotateZ(-90deg);
 }
 
-label:has(input[name="rotateZ"]) {
+label:has(input[name="ry"]) {
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
+}
+
+label:has(input[name="rz"]) {
+    position: absolute;
+    bottom: 50%;
+    right: -5rem;
+    transform: translateY(-50%) rotateZ(-90deg);
 }
 
 main {
@@ -181,8 +189,13 @@ main {
             height: 100%;
             position: relative;
             transform-style: preserve-3d;
-            transform: rotateX(calc(var(--rx, 0) * 90deg)) rotateY(calc(var(--ry, 0) * 90deg)) rotateZ(calc(var(--rz, 0) * 90deg)) translateX(calc(var(--tx, 0) * var(--size-cube))) translateY(calc(var(--ty, 0) * var(--size-cube))) translateZ(calc(var(--tz, 0) * var(--size-cube)));
-
+            transform:
+                    rotateX(calc(var(--rx, 0) * 90deg))
+                    rotateY(calc(var(--ry, 0) * 90deg))
+                    rotateZ(calc(var(--rz, 0) * 90deg))
+                    translateX(calc(var(--tx, 0) * var(--size-cube)))
+                    translateY(calc(var(--ty, 0) * var(--size-cube)))
+                    translateZ(calc(var(--tz, 0) * var(--size-cube)));
             transition: 1s;
 
 
@@ -351,6 +364,8 @@ main {
     }
 }
 
+
+
 [data-side="front-side"],
 [data-side="back-side"],
 [data-side="left-side"],
@@ -362,40 +377,34 @@ main {
     position: absolute;
     border: 1px solid black;
     opacity: 1;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    text-transform: uppercase;
 }
 
 [data-side="front-side"] {
     background-color: red;
-    transform: rotateY(0deg) translateZ(calc( var(--size-cube) * .5) );
+    transform: rotateY(0deg) translateZ(calc(var(--size-cube) * .5));
 }
 
 [data-side="back-side"] {
     background-color: orange;
-    transform: rotateY(180deg) translateZ(calc( var(--size-cube) * .5) );
+    transform: rotateY(180deg) translateZ(calc(var(--size-cube) * .5));
 }
 
 [data-side="left-side"] {
     background-color: green;
-    transform: rotateY(-90deg) translateZ(calc( var(--size-cube) * .5) );
+    transform: rotateY(-90deg) translateZ(calc(var(--size-cube) * .5));
 }
 
 [data-side="right-side"] {
     background-color: blue;
-    transform: rotateY(90deg) translateZ(calc( var(--size-cube) * .5) );
+    transform: rotateY(90deg) translateZ(calc(var(--size-cube) * .5));
 }
 
 [data-side="top-side"] {
     background-color: white;
-    transform: rotateX(90deg) translateZ(calc( var(--size-cube) * .5) );
+    transform: rotateX(90deg) translateZ(calc(var(--size-cube) * .5));
 }
 
 [data-side="bottom-side"] {
     background-color: yellow;
-    transform: rotateX(-90deg) translateZ(calc( var(--size-cube) * .5) );
+    transform: rotateX(-90deg) translateZ(calc(var(--size-cube) * .5));
 }
