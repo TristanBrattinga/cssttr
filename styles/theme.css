@@ -32,10 +32,10 @@ html:has([value="light"]:checked) {
 /* THEMES */
 /**********/
 
-/* default / dark theme */
+/* default dark theme */
 body {
     color-scheme:dark;
-    --bg-body:black;
+    --bg-body:lightblue;
     --glow-color:crimson;
     --text-color: white;
 }
