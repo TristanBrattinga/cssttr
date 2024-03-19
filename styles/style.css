@@ -10,13 +10,6 @@
     -webkit-font-smoothing: antialiased;
 }
 
-:root {
-    --rotateX: 0;
-    --rotateY: 0;
-    --rotateZ: 0;
-    --cubeSize: 200px;
-}
-
 header {
     section {
         display: flex;
@@ -174,15 +167,15 @@ main {
     /*SPACE*/
 
     > div {
-        --size-cube: 100px;
+        --size-cube: 50px;
         perspective: 600px;
         width: var(--size-cube);
         height: var(--size-cube);
         transform-style: preserve-3d;
         display: grid;
+        transform: translateZ(2000px);
 
         /*CUBE*/
-
         > div {
             grid-area: 1/1;
             width: 100%;
@@ -190,9 +183,9 @@ main {
             position: relative;
             transform-style: preserve-3d;
             transform:
-                    rotateX(calc(var(--rx, 0) * 90deg))
-                    rotateY(calc(var(--ry, 0) * 90deg))
-                    rotateZ(calc(var(--rz, 0) * 90deg))
+                    rotateX(calc(var(--rx, 0) * 45deg))
+                    rotateY(calc(var(--ry, 0) * 45deg))
+                    rotateZ(calc(var(--rz, 0) * 45deg))
                     translateX(calc(var(--tx, 0) * var(--size-cube)))
                     translateY(calc(var(--ty, 0) * var(--size-cube)))
                     translateZ(calc(var(--tz, 0) * var(--size-cube)));
