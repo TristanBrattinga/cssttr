@@ -1,0 +1,242 @@
+:root:has([name="explode"]:checked) .cube:nth-of-type(1) {
+    --tx: -3.5;
+    --ty: -5.2;
+    --tz: -25.8; /* -8.6 * 3 */
+    /*--rx: 6.6;*/
+    /*--ry: 9.9;*/
+    /*--rz: 2.4;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(2) {
+    --tx: -4.9;
+    --ty: -2.5;
+    --tz: 9; /* 3 * 3 */
+    /*--rx: 3.6;*/
+    /*--ry: 0.1;*/
+    /*--rz: 5.3;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(3) {
+    --tx: -9.3;
+    --ty: -6.2;
+    --tz: 11.4; /* 3.8 * 3 */
+    /*--rx: 7.0;*/
+    /*--ry: 9.8;*/
+    /*--rz: 3.4;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(4) {
+    --tx: 2.4;
+    --ty: -4.3;
+    --tz: -27.6; /* -9.2 * 3 */
+    /*--rx: 3.4;*/
+    /*--ry: 8.7;*/
+    /*--rz: 9.5;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(5) {
+    --tx: 2.1;
+    --ty: -7.2;
+    --tz: 12; /* 4 * 3 */
+    /*--rx: 8.1;*/
+    /*--ry: 0.9;*/
+    /*--rz: 7.3;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(6) {
+    --tx: 0;
+    --ty: -1;
+    --tz: 18.6; /* 6.2 * 3 */
+    /*--rx: 6.9;*/
+    /*--ry: 2.5;*/
+    /*--rz: 7.2;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(7) {
+    --tx: 2.9;
+    --ty: -4.5;
+    --tz: -6.6; /* -2.2 * 3 */
+    /*--rx: 5.5;*/
+    /*--ry: 2.7;*/
+    /*--rz: 6.1;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(8) {
+    --tx: 8.5;
+    --ty: -4.3;
+    --tz: 6.9; /* 2.3 * 3 */
+    /*--rx: 3.7;*/
+    /*--ry: 9.7;*/
+    /*--rz: 3.5;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(9) {
+    --tx: 9.2;
+    --ty: -4.7;
+    --tz: 5.1; /* 1.7 * 3 */
+    /*--rx: 6.5;*/
+    /*--ry: 7.7;*/
+    /*--rz: 0.1;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(10) {
+    --tx: -9.2;
+    --ty: 4.7;
+    --tz: -9.9; /* -3.3 * 3 */
+    /*--rx: 1.1;*/
+    /*--ry: 7.8;*/
+    /*--rz: 0.4;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(11) {
+    --tx: -2.9;
+    --ty: 9.5;
+    --tz: 13.5; /* 4.5 * 3 */
+    /*--rx: 4.2;*/
+    /*--ry: 1.6;*/
+    /*--rz: 0.9;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(12) {
+    --tx: -7.5;
+    --ty: 6.3;
+    --tz: 17.7; /* 5.9 * 3 */
+    /*--rx: 0.1;*/
+    /*--ry: 0.4;*/
+    /*--rz: 8.8;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(13) {
+    --tx: 4.8;
+    --ty: 9.3;
+    --tz: -6.6; /* -2.2 * 3 */
+    /*--rx: 5.7;*/
+    /*--ry: 9.8;*/
+    /*--rz: 4.6;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(14) {
+    --tx: 9.9;
+    --ty: 5.5;
+    --tz: 8.7; /* 2.9 * 3 */
+    /*--rx: 9.5;*/
+    /*--ry: 3.3;*/
+    /*--rz: 9.8;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(15) {
+    --tx: -3.1;
+    --ty: 4.2;
+    --tz: 22.2; /* 7.4 * 3 */
+    /*--rx: 5.0;*/
+    /*--ry: 0.7;*/
+    /*--rz: 0.7;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(16) {
+    --tx: 6.9;
+    --ty: 5.2;
+    --tz: -21.3; /* -7.1 * 3 */
+    /*--rx: 8.9;*/
+    /*--ry: 0.5;*/
+    /*--rz: 0.3;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(17) {
+    --tx: 3.9;
+    --ty: 5.7;
+    --tz: 21.6; /* 7.2 * 3 */
+    /*--rx: 4.4;*/
+    /*--ry: 4.5;*/
+    /*--rz: 4.6;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(18) {
+    --tx: 6.3;
+    --ty: 8.2;
+    --tz: 27.3; /* 9.1 * 3 */
+    /*--rx: 9.5;*/
+    /*--ry: 2.0;*/
+    /*--rz: 3.5;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(19) {
+    --tx: -2.7;
+    --ty: 6.2;
+    --tz: -14.4; /* -4.8 * 3 */
+    /*--rx: 6.3;*/
+    /*--ry: 8.1;*/
+    /*--rz: 9.1;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(20) {
+    --tx: -7.1;
+    --ty: 6.2;
+    --tz: 13.2; /* 4.4 * 3 */
+    /*--rx: 3.5;*/
+    /*--ry: 4.9;*/
+    /*--rz: 2.1;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(21) {
+    --tx: -6.5;
+    --ty: 2.3;
+    --tz: 15.6; /* 5.2 * 3 */
+    /*--rx: 6.9;*/
+    /*--ry: 5.8;*/
+    /*--rz: 0.9;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(22) {
+    --tx: 5.3;
+    --ty: 7.2;
+    --tz: -24.3; /* -8.1 * 3 */
+    /*--rx: 1.3;*/
+    /*--ry: 7.9;*/
+    /*--rz: 6.9;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(23) {
+    --tx: 4.1;
+    --ty: 7.3;
+    --tz: 25.5; /* 8.5 * 3 */
+    /*--rx: 5.7;*/
+    /*--ry: 7.7;*/
+    /*--rz: 9.3;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(24) {
+    --tx: 5.2;
+    --ty: 9.2;
+    --tz: 18.9; /* 6.3 * 3 */
+    /*--rx: 3.2;*/
+    /*--ry: 0.2;*/
+    /*--rz: 1.8;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(25) {
+    --tx: 7.6;
+    --ty: 5.5;
+    --tz: -11.7; /* -3.9 * 3 */
+    /*--rx: 9.6;*/
+    /*--ry: 8.9;*/
+    /*--rz: 3.1;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(26) {
+    --tx: 7.7;
+    --ty: 4.6;
+    --tz: 24.9; /* 8.3 * 3 */
+    /*--rx: 0.7;*/
+    /*--ry: 8.9;*/
+    /*--rz: 5.0;*/
+}
+
+:root:has([name="explode"]:checked) .cube:nth-of-type(27) {
+    --tx: 9.2;
+    --ty: 6.3;
+    --tz: 21.9; /* 7.3 * 3 */
+    /*--rx: 0.7;*/
+    /*--ry: 0.7;*/
+    /*--rz: 8.9;*/
+}

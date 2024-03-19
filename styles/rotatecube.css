@@ -1,0 +1,7 @@
+/*main>div>div:nth-child(-n + 9) {*/
+/*    --ry: -1;*/
+/*}*/
+
+/*main>div>div:nth-child(n + 10):nth-child(-n + 18) {*/
+/*    --ry: 1;*/
+/*}*/

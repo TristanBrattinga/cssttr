@@ -11,12 +11,6 @@
     --colors: light;
 }
 
-/* system checked --> nada */
-html:has([value="system"]:checked) {
-    /* niks	 */
-}
-
-
 /* dark checked */
 html:has([value="dark"]:checked) {
     --colors: dark;
@@ -34,9 +28,9 @@ html:has([value="light"]:checked) {
 
 /* default dark theme */
 body {
-    color-scheme:dark;
-    --bg-body:lightblue;
-    --glow-color:crimson;
+    color-scheme: dark;
+    --bg-body: #202124;
+    --glow-color: crimson;
     --text-color: white;
 }
 
@@ -45,9 +39,9 @@ body {
 
 @container style(--colors: light) {
     body {
-        color-scheme:light;
+        color-scheme: light;
         --bg-body: lightblue;
-        --glow-color:lime;
+        --glow-color: lime;
         --text-color: black;
     }
 }

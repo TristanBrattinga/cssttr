@@ -1,3 +1,28 @@
+/* POSITION THE SLIDERS */
+
+label:has(input[name="rcx"]) {
+    position: absolute;
+    bottom: 50%;
+    left: -5rem;
+    transform: translateY(-50%) rotateZ(-90deg);
+}
+
+label:has(input[name="rcy"]) {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+label:has(input[name="rcz"]) {
+    position: absolute;
+    bottom: 50%;
+    right: -5rem;
+    transform: translateY(-50%) rotateZ(-90deg);
+}
+
+/* SLIDER STYLING */
+
 input[type=range] {
     -webkit-appearance: none;
     margin: 18px 0;
