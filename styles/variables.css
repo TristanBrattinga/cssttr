@@ -1,0 +1,11 @@
+:root {
+    --header-size: 3.25rem;
+    --size-cube: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --header-size: 1.5rem;
+        --size-cube: 50px;
+    }
+}

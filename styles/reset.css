@@ -1,0 +1,32 @@
+dialog {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 70;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+:root:has([name="explode"]:checked) dialog {
+    display: flex;
+}
+
+:root:has([name="explode"]:checked) header {
+    display: none;
+}
+
+label:has(input[name="reset"]) {
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+}
+
+:root:has([name="reset"]:checked) dialog {
+    display: none;
+}

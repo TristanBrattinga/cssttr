@@ -1,24 +1,33 @@
 /* POSITION THE SLIDERS */
 
-label:has(input[name="rcx"]) {
+input[name="rcx"] {
     position: absolute;
     bottom: 50%;
-    left: -5rem;
+    left: -2rem;
     transform: translateY(-50%) rotateZ(-90deg);
 }
 
-label:has(input[name="rcy"]) {
+input[name="rcy"] {
     position: absolute;
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-label:has(input[name="rcz"]) {
-    position: absolute;
-    bottom: 50%;
-    right: -5rem;
-    transform: translateY(-50%) rotateZ(-90deg);
+@media only screen and (max-width: 768px) {
+    input[name="rcx"] {
+        position: absolute;
+        bottom: 50%;
+        left: -5rem;
+        transform: translateY(-50%) rotateZ(-90deg);
+    }
+
+    input[name="rcy"] {
+        position: absolute;
+        bottom: 32rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 /* SLIDER STYLING */
@@ -26,7 +35,7 @@ label:has(input[name="rcz"]) {
 input[type=range] {
     -webkit-appearance: none;
     margin: 18px 0;
-    width: 100%;
+    width: 200px;
 }
 
 input[type=range]:focus {
@@ -37,25 +46,26 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 10px;
     cursor: pointer;
-    background: #3071a9;
-    border-radius: 1.3px;
-    border: 0.2px solid #010101;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    border-radius: 50px;
 }
 
 input[type=range]::-webkit-slider-thumb {
-    border: 1px solid #000000;
-    height: 36px;
-    width: 16px;
-    border-radius: 3px;
+    height: 8px;
+    width: 20px;
+    border-radius: 50px;
     background: #ffffff;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -14px;
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #367ebd;
-}
+/*input[type=range]:focus::-webkit-slider-runnable-track {*/
+/*    background: #367ebd;*/
+/*}*/
 
 input[type=range]::-moz-range-track {
     width: 100%;

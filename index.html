@@ -39,181 +39,203 @@
     </nav>
 </header>
 <main>
-    <section>
-        <article>
-            <h1>CSS to the Rescue</h1>
-        </article>
-        <article>
-            <h2>Do You want to learn how to solve the mystery of the cube?</h2>
-        </article>
-        <article>
-            <h3>Made by Tristan Brattinga</h3>
-        </article>
-        <article>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <p>Scroll to start playing</p>
-            <label>
-                Click me
-                <input type="radio" name="start" />
-            </label>
-        </article>
-    </section>
+    <!--    <section>-->
+    <!--        <article>-->
+    <!--            <h1>CSS to the Rescue</h1>-->
+    <!--        </article>-->
+    <!--        <article>-->
+    <!--            <h2>Do You want to learn how to solve the mystery of the cube?</h2>-->
+    <!--        </article>-->
+    <!--        <article>-->
+    <!--            <h3>Made by Tristan Brattinga</h3>-->
+    <!--        </article>-->
+    <!--        <article>-->
+    <!--            <div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--                <div></div>-->
+    <!--            </div>-->
+    <!--            <p>Click Me!</p>-->
+    <!--            <label>-->
+    <!--                Click me-->
+    <!--                <input type="checkbox" name="start" />-->
+    <!--            </label>-->
+    <!--        </article>-->
+    <!--    </section>-->
     <!-- CUBE (3D OBJECT) -->
-<!--    <div>-->
-<!--        &lt;!&ndash;TOP LEFT BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP LEFT MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP LEFT FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP MIDDLE BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP MIDDLE MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP MIDDLE FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP RIGHT BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP RIGHT MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;TOP RIGHT FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--            <div data-side="top-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE LEFT BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE LEFT MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE LEFT FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE MIDDLE BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE MIDDLE MIDDLE&ndash;&gt;-->
-<!--        <div></div>-->
-<!--        &lt;!&ndash;MIDDLE MIDDLE FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE RIGHT BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE RIGHT MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;MIDDLE RIGHT FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM LEFT BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM LEFT MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM LEFT FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="left-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM MIDDLE BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM MIDDLE MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM MIDDLE FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM RIGHT BACK&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="back-side"></div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM RIGHT MIDDLE&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--        &lt;!&ndash;BOTTOM RIGHT FRONT&ndash;&gt;-->
-<!--        <div>-->
-<!--            <div data-side="front-side"></div>-->
-<!--            <div data-side="right-side"></div>-->
-<!--            <div data-side="bottom-side"></div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div>
+        <!--TOP LEFT BACK-->
+        <div>
+            <div data-side="back-side">1</div>
+            <div data-side="left-side">1</div>
+            <div data-side="top-side">1</div>
+        </div>
+        <!--TOP LEFT MIDDLE-->
+        <div>
+            <div data-side="left-side">2</div>
+            <div data-side="top-side">2</div>
+        </div>
+        <!--TOP LEFT FRONT-->
+        <div>
+            <div data-side="front-side">3</div>
+            <div data-side="left-side">3</div>
+            <div data-side="top-side">3</div>
+        </div>
+        <!--TOP MIDDLE BACK-->
+        <div>
+            <div data-side="back-side">4</div>
+            <div data-side="top-side">4</div>
+        </div>
+        <!--TOP MIDDLE MIDDLE-->
+        <div>
+            <div data-side="top-side">5</div>
+        </div>
+        <!--TOP MIDDLE FRONT-->
+        <div>
+            <div data-side="front-side">6</div>
+            <div data-side="top-side">6</div>
+        </div>
+        <!--TOP RIGHT BACK-->
+        <div>
+            <div data-side="back-side">7</div>
+            <div data-side="right-side">7</div>
+            <div data-side="top-side">7</div>
+        </div>
+        <!--TOP RIGHT MIDDLE-->
+        <div>
+            <div data-side="right-side">8</div>
+            <div data-side="top-side">8</div>
+        </div>
+        <!--TOP RIGHT FRONT-->
+        <div>
+            <div data-side="front-side">9</div>
+            <div data-side="right-side">9</div>
+            <div data-side="top-side">9</div>
+        </div>
+        <!--MIDDLE LEFT BACK-->
+        <div>
+            <div data-side="back-side">10</div>
+            <div data-side="left-side">10</div>
+        </div>
+        <!--MIDDLE LEFT MIDDLE-->
+        <div>
+            <div data-side="left-side">11</div>
+        </div>
+        <!--MIDDLE LEFT FRONT-->
+        <div>
+            <div data-side="front-side">12</div>
+            <div data-side="left-side">12</div>
+        </div>
+        <!--MIDDLE MIDDLE BACK-->
+        <div>
+            <div data-side="back-side">13</div>
+        </div>
+        <!--MIDDLE MIDDLE MIDDLE-->
+        <div></div>
+        <!--MIDDLE MIDDLE FRONT-->
+        <div>
+            <div data-side="front-side">15</div>
+        </div>
+        <!--MIDDLE RIGHT BACK-->
+        <div>
+            <div data-side="back-side">16</div>
+            <div data-side="right-side">16</div>
+        </div>
+        <!--MIDDLE RIGHT MIDDLE-->
+        <div>
+            <div data-side="right-side">17</div>
+        </div>
+        <!--MIDDLE RIGHT FRONT-->
+        <div>
+            <div data-side="front-side">18</div>
+            <div data-side="right-side">18</div>
+        </div>
+        <!--BOTTOM LEFT BACK-->
+        <div>
+            <div data-side="back-side">19</div>
+            <div data-side="left-side">19</div>
+            <div data-side="bottom-side">19</div>
+        </div>
+        <!--BOTTOM LEFT MIDDLE-->
+        <div>
+            <div data-side="left-side">20</div>
+            <div data-side="bottom-side">20</div>
+        </div>
+        <!--BOTTOM LEFT FRONT-->
+        <div>
+            <div data-side="front-side">21</div>
+            <div data-side="left-side">21</div>
+            <div data-side="bottom-side">21</div>
+        </div>
+        <!--BOTTOM MIDDLE BACK-->
+        <div>
+            <div data-side="back-side">22</div>
+            <div data-side="bottom-side">22</div>
+        </div>
+        <!--BOTTOM MIDDLE MIDDLE-->
+        <div>
+            <div data-side="bottom-side">23</div>
+        </div>
+        <!--BOTTOM MIDDLE FRONT-->
+        <div>
+            <div data-side="front-side">24</div>
+            <div data-side="bottom-side">24</div>
+        </div>
+        <!--BOTTOM RIGHT BACK-->
+        <div>
+            <div data-side="back-side">25</div>
+            <div data-side="right-side">25</div>
+            <div data-side="bottom-side">25</div>
+        </div>
+        <!--BOTTOM RIGHT MIDDLE-->
+        <div>
+            <div data-side="right-side">26</div>
+            <div data-side="bottom-side">26</div>
+        </div>
+        <!--BOTTOM RIGHT FRONT-->
+        <div>
+            <div data-side="front-side">27</div>
+            <div data-side="right-side">27</div>
+            <div data-side="bottom-side">27</div>
+        </div>
+    </div>
 
-<!--    <label>-->
-<!--        Rotate X:-->
-<!--        <input type="range" min="0" max="8" step="1" value="0" name="rcx" orient="vertical">-->
-<!--    </label>-->
-<!--    <label>-->
-<!--        Rotate Y:-->
-<!--        <input type="range" min="0" max="8" step="1" value="0" name="rcy" orient="vertical">-->
-<!--    </label>-->
+    <input type="range" min="0" max="8" step="1" value="0" name="rcx" orient="vertical">
+    <input type="range" min="0" max="8" step="1" value="0" name="rcy" orient="vertical">
+
+    <form>
+        <p>Solve the cube</p>
+        <label>
+            CLick
+            <input type="checkbox" name="step3" />
+        </label>
+        <label>
+            CLick
+            <input type="checkbox" name="step2" />
+        </label>
+        <label>
+            Click
+            <input type="checkbox" name="explode" />
+        </label>
+        <label>
+            CLick
+            <input type="checkbox" name="step1" />
+        </label>
+    </form>
+
+    <dialog>
+        <p>Look at what you did!!</p>
+        <label>
+            Reset
+            <input type="checkbox" name="reset" />
+        </label>
+    </dialog>
 </main>
 
 
