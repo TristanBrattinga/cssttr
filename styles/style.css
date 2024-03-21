@@ -313,6 +313,7 @@ main {
     border: 1px solid black;
     z-index: 1;
     color: black;
+    opacity: 0.5;
 }
 
 [data-side="front-side"] {

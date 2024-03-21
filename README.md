@@ -90,7 +90,8 @@ These are the steps I took to make my Rubik's Cube:
     <li>Control the cube using range inputs</li>
     <li>Build the full Rubik's Cube</li>
     <li>Rotate one side of the Rubik's Cube</li>
-    <li>Rework...</li>
+    <li>Rework</li>
+    <li>If I had more time...</li>
 </ol>
 
 ### Step 1: Build a single cube in 3D
@@ -467,9 +468,32 @@ squished together when the rotation was happening. But then again it was a rotat
 
 <img src="./assets/readme-images/rotateside.gif" alt="">
 
-### Step 5: Rework...
+### Step 5: Rework
+
+When I had undertaken the previous steps, I was really stuck with my progress. I approached Sanne 't Hooft and he helped
+me in an unbelievable great way. He showed me how to position the single cubes correctly using `custom properties`. This
+way I could rotate the cubes from the center of the given axis and individually. When he helped me and gave me a little
+boost, I fully expanded my cube game and was able to rotate the cube three times.
+
+I wanted to recreate the feeling of solving a Rubik's Cube. I added some interactive elements as a puzzle. I first
+rotated the cube three times and then used those rotate-x, rotate-y and rotate-z values as the start configuration for
+my cube. When the user clicks the buttons in the correct order, the cube is solved. But when the user clicks the wrong
+button an `EXPLOSION` is triggered. 
+
+One of the requirements was also to have a compelling title for your project, so I added a cool entrance that uses the 
+3d space to slide in certain content. Adding this made it feel like a real game! 
 
 ## Result
+
+### If I had more time...
+
+If I had more time I would've incorporated logic to change the theme of cube and the website. I would have loved to
+experiment with the possibility of different measurements for the cube. It would be so cool (and now easy with the
+custom properties) to do. Then I could have a `5x5`, or maybe `7x7` cube.
+
+### Reflection
+
+I really loved this `CSS to the Rescue` course. I'm really satisfied with my final result and I'm proud of what I made.
 
 ## Sources
 
