@@ -56,12 +56,31 @@ When I completed the math problem I was confident again about my mathematical ab
 
 ### Further Requirements
 
-<ul>
-    <li>No JavaScript, range input code excluded. <a href="#rangeCode">Read more</a>.</li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+<ol>
+    <li>
+        Selector first CSS and no JS approach
+        <ul>
+            <li>Do not use ID's and classes</li>
+            <li>No JavaScript, range input code excluded. <a href="#rangeCode">Read more</a></li>
+        </ul>
+    </li>
+    <li>Use at least two of following CSS techniques in a useful way: CSS nesting, @layer, container queries, style 
+        queries.
+    </li>
+    <li>Sensational yet fitting typographic title</li>
+    <li>
+        Apply the guidelines you've learned in previous years
+        for writing clean and elegant code
+        <ul>
+            <li>Responsive</li>
+            <li>Accessible</li>
+            <li>Custom props</li>
+            <li>Semantics</li>
+        </ul>
+    </li>
+</ol>
+
+---
 
 ## Process
 
@@ -71,7 +90,7 @@ These are the steps I took to make my Rubik's Cube:
     <li>Control the cube using range inputs</li>
     <li>Build the full Rubik's Cube</li>
     <li>Rotate one side of the Rubik's Cube</li>
-    <li>Rework</li>
+    <li>Rework...</li>
 </ol>
 
 ### Step 1: Build a single cube in 3D
@@ -444,9 +463,11 @@ squished together when the rotation was happening. But then again it was a rotat
 }
 ```
 
-#### The Result 
+#### The Result
 
 <img src="./assets/readme-images/rotateside.gif" alt="">
+
+### Step 5: Rework...
 
 ## Result
 
