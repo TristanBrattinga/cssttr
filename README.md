@@ -250,6 +250,7 @@ Here is the CSS to apply to every side and complete the cube. We now have the re
 ---
 
 ### Step 2: Control the cube using range inputs
+
 <div id="rangeCode"></div>
 
 The next step for me to do is making the cube rotate by listening to the range inputs. This can only be done by
@@ -263,7 +264,7 @@ const ranges = document.querySelectorAll('[type="range"]');
 const updateRange = range => {
   // the name of the custom property is the name of the input
   const rangeName  = range.name;
-  // the value of the custom property is the value of the input
+  // the value of the custom property is the value of the input 
   const rangeValue = range.value;
   // a custom property is set on the HTML element
 
@@ -293,7 +294,110 @@ ranges.forEach(range => {
 
 ### Step 3: Build the full Rubik's Cube
 
-Now the fun (and hard) part begins.
+Now the fun (and hard) part begins. When I first started building the cube I didn't really have an idea of where to
+start and I just duplicated the cube I already had 26 times. Then I had one long line of cubes. With a lot of trial and
+error just trying out some translates, I made the whole cube. The code didn't look nice, but it worked. Here you can see
+the css I had at the time:
+
+```css
+main > div > div > div:nth-of-type(4) {
+    transform: translateY(-200px) translateX(calc(200px / 3));
+}
+
+main > div > div > div:nth-of-type(5) {
+    transform: translateY(-200px) translateX(calc(200px / 3));
+}
+
+main > div > div > div:nth-of-type(6) {
+    transform: translateY(-200px) translateX(calc(200px / 3));
+}
+
+main > div > div > div:nth-of-type(7) {
+    transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
+}
+
+main > div > div > div:nth-of-type(8) {
+    transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
+}
+
+main > div > div > div:nth-of-type(9) {
+    transform: translateY(-400px) translateX(calc(200px - (200px / 3)));
+}
+
+main > div > div > div:nth-of-type(10) {
+    transform: translateY(-600px) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(11) {
+    transform: translateY(-600px) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(12) {
+    transform: translateY(-600px) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(13) {
+    transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(14) {
+    transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(15) {
+    transform: translateY(-800px) translateX(calc(200px / 3)) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(16) {
+    transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(17) {
+    transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(18) {
+    transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3));
+}
+
+main > div > div > div:nth-of-type(19) {
+    transform: translateY(-1200px) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(20) {
+    transform: translateY(-1200px) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(21) {
+    transform: translateY(-1200px) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(22) {
+    transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(23) {
+    transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(24) {
+    transform: translateY(-1400px) translateX(calc(200px / 3)) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(25) {
+    transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(26) {
+    transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
+}
+
+main > div > div > div:nth-of-type(27) {
+    transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3));
+}
+```
+
+### Step 4: Rotate one side of the Rubik's Cube
 
 ## Workshops
 
