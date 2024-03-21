@@ -35,7 +35,10 @@ header {
     width: 100%;
     z-index: 10;
 
-    h1 {
+    a {
+        text-decoration: none;
+        font-size: var(--header-size);
+        color: white;
         font-family: "Ailerons", sans-serif;
     }
 
@@ -95,7 +98,7 @@ main {
         width: var(--size-cube);
         height: var(--size-cube);
         transform-style: preserve-3d;
-        display: none;
+        display: grid;
         transform:
             rotateX(calc(var(--rcx, 0) * -45deg))
             rotateY(calc(var(--rcy, 0) * -45deg));
@@ -108,9 +111,15 @@ main {
             grid-area: 1/1;
             transform-style: preserve-3d;
             transform:
-                    rotateX(calc(var(--rx, 0) * 90deg))
-                    rotateY(calc(var(--ry, 0) * 90deg))
-                    rotateZ(calc(var(--rz, 0) * 90deg))
+                    rotateX(calc(var(--rx1, 0) * 90deg))
+                    rotateY(calc(var(--ry1, 0) * 90deg))
+                    rotateZ(calc(var(--rz1, 0) * 90deg))
+                    rotateX(calc(var(--rx2, 0) * 90deg))
+                    rotateY(calc(var(--ry2, 0) * 90deg))
+                    rotateZ(calc(var(--rz2, 0) * 90deg))
+                    rotateX(calc(var(--rx3, 0) * 90deg))
+                    rotateY(calc(var(--ry3, 0) * 90deg))
+                    rotateZ(calc(var(--rz3, 0) * 90deg))
                     translateX(calc(var(--tx, 0) * var(--size-cube)))
                     translateY(calc(var(--ty, 0) * var(--size-cube)))
                     translateZ(calc(var(--tz, 0) * var(--size-cube)));
@@ -355,7 +364,7 @@ main {
 /* INTERACTIVE ELEMENTS */
 
 form {
-    display: none;
+    display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
     position: absolute;
