@@ -288,7 +288,7 @@ ranges.forEach(range => {
 
 #### The Result
 
-<img src="./assets/readme-images/rotate.gif" alt="" style="width: 50%">
+<img src="./assets/readme-images/rotatecube.gif" alt="" style="width: 50%">
 
 ---
 
@@ -443,6 +443,10 @@ squished together when the rotation was happening. But then again it was a rotat
     transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
 }
 ```
+
+#### The Result 
+
+<img src="./assets/readme-images/rotateside.gif" alt="">
 
 ## Result
 
