@@ -1,6 +1,7 @@
 /* POSITION THE SLIDERS */
 
 input[name="rcx"] {
+    display: none;
     position: absolute;
     bottom: 50%;
     left: -2rem;
@@ -8,6 +9,7 @@ input[name="rcx"] {
 }
 
 input[name="rcy"] {
+    display: none;
     position: absolute;
     bottom: 2rem;
     left: 50%;
