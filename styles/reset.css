@@ -1,32 +1,248 @@
-dialog {
+form article {
     display: none;
     flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 70;
-    width: 100%;
-    height: 100%;
-    border: none;
+    gap: 20px;
 }
 
-:root:has([name="explode"]:checked) dialog {
+:root:has([name="explode"]:checked) form article {
     display: flex;
 }
 
-:root:has([name="explode"]:checked) header {
-    display: none;
-}
+:root:has([name="reset"]:checked) main > div > div {
 
-label:has(input[name="reset"]) {
-    cursor: pointer;
-
-    input {
-        display: none;
+    &:nth-of-type(1) {
+        --tx: -1;
+        --ty: -1;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
     }
-}
 
-:root:has([name="reset"]:checked) dialog {
-    display: none;
+    &:nth-of-type(2) {
+        --tx: -1;
+        --ty: -1;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(3) {
+        --tx: -1;
+        --ty: -1;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(4) {
+        --tx: 0;
+        --ty: -1;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(5) {
+        --tx: 0;
+        --ty: -1;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(6) {
+        --tx: 0;
+        --ty: -1;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(7) {
+        --tx: 1;
+        --ty: -1;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(8) {
+        --tx: 1;
+        --ty: -1;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(9) {
+        --tx: 1;
+        --ty: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(10) {
+        --tx: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(11) {
+        --tx: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(12) {
+        --tx: -1;
+        ---rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(13) {
+        --tx: 0;
+        --ty: 0;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(14) {
+        --tx: 0;
+        --ty: 0;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(15) {
+        --tx: 0;
+        --ty: 0;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(16) {
+        --tx: 1;
+        --ty: 0;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(17) {
+        --tx: 1;
+        --ty: 0;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(18) {
+        --tx: 1;
+        --ty: 0;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(19) {
+        --tx: -1;
+        --ty: 1;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(20) {
+        --tx: -1;
+        --ty: 1;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(21) {
+        --tx: -1;
+        --ty: 1;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(22) {
+        --tx: 0;
+        --ty: 1;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(23) {
+        --tx: 0;
+        --ty: 1;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(24) {
+        --tx: 0;
+        --ty: 1;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(25) {
+        --tx: 1;
+        --ty: 1;
+        --tz: -1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(26) {
+        --tx: 1;
+        --ty: 1;
+        --tz: 0;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
+
+    &:nth-of-type(27) {
+        --tx: 1;
+        --ty: 1;
+        --tz: 1;
+        --rx: 0;
+        --ry: 0;
+        --rz: 0;
+    }
 }

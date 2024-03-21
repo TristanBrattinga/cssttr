@@ -65,7 +65,3 @@
 :root:has([name="step1"]:checked) main > div > div:nth-of-type(27) {
     --ry: 0;
 }
-
-:root:has([name="step1"]:checked) label:has(input[name="explode"]) {
-    transform: translateY(0);
-}
