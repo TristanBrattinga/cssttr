@@ -71,7 +71,7 @@ These are the steps I took to make my Rubik's Cube:
     <li>Control the cube using range inputs</li>
     <li>Build the full Rubik's Cube</li>
     <li>Rotate one side of the Rubik's Cube</li>
-    <li><mark>.... More to come</mark></li>
+    <li>Rework</li>
 </ol>
 
 ### Step 1: Build a single cube in 3D
@@ -125,7 +125,7 @@ To fully understand and see the effects applied by these functions I have made a
 little <a href="https://codepen.io/crazyivan117/pen/gOyLdZR">codepen</a> which showcases the
 different effects.
 
-<img src="./readme-images/transform.png" alt="Schematic overview of different 3d transform effects">
+<img src="./assets/readme-images/transform.png" alt="Schematic overview of different 3d transform effects">
 
 #### Building a Cube
 
@@ -208,9 +208,9 @@ height and width and from the center of the cube it needs half the distance. If 
 like the second image.
 
 <div style="display: flex; gap: 10px">
-    <img src="./readme-images/cube1.png" alt="" style="width: 33.3%">
-    <img src="./readme-images/cube2.png" alt="" style="width: 33.3%">
-    <img src="./readme-images/cube3.png" alt="" style="width: 33.3%">
+    <img src="./assets/readme-images/cube1.png" alt="" style="width: 33.3%">
+    <img src="./assets/readme-images/cube2.png" alt="" style="width: 33.3%">
+    <img src="./assets/readme-images/cube3.png" alt="" style="width: 33.3%">
 </div>
 
 Here is the CSS to apply to every side and complete the cube. We now have the result shown on the third image!
@@ -288,7 +288,7 @@ ranges.forEach(range => {
 
 #### The Result
 
-<img src="./readme-images/rotate.gif" alt="" style="width: 50%">
+<img src="./assets/readme-images/rotate.gif" alt="" style="width: 50%">
 
 ---
 
@@ -397,9 +397,52 @@ main > div > div > div:nth-of-type(27) {
 }
 ```
 
+<img src="./assets/readme-images/cubev2.png" alt="">
+
 ### Step 4: Rotate one side of the Rubik's Cube
 
-## Workshops
+I set a first challenge for myself and that was to rotate one side of the cube. If I wanted to do more, I could always
+go on when the first rotate was successful. Again I did this in a very hacky way. I did manage to successfully rotate
+one side using the CSS below. The only thing was that the rotation didn't look very clean and all the cubes were
+squished together when the rotation was happening. But then again it was a rotation!
+
+```css
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(7) {
+    transform: translateY(-400px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(8) {
+    transform: translateY(-466px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(9) {
+    transform: translateY(-533px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(16) {
+    transform: translateY(-933px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(17) {
+    transform: translateY(-1000px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(18) {
+    transform: translateY(-1066px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(25) {
+    transform: translateY(-1466px) translateX(calc(200px - (200px / 3))) translateZ(calc(-400px / 3)) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(26) {
+    transform: translateY(-1533px) translateX(calc(200px - (200px / 3))) translateZ(calc(-200px / 3)) rotateX(90deg);
+}
+
+:root:has(input[name="rotateSide"]:checked) main > div > div > div:nth-of-type(27) {
+    transform: translateY(-1600px) translateX(calc(200px - (200px / 3))) rotateX(90deg);
+}
+```
 
 ## Result
 
