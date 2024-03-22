@@ -477,6 +477,113 @@ button an `EXPLOSION` is triggered.
 One of the requirements was also to have a compelling title for your project, so I added a cool entrance that uses the 
 3d space to slide in certain content. Adding this made it feel like a real game! 
 
+#### Further Requirements
+
+For the further requirements I took on CSS nesting and using style queries. CSS nesting is amazing and it is way better
+than writing CSS the old way. You have way more overview of your code and it's really easy to do!
+
+**CSS Nesting**
+
+```css
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transform: translateY(-100%);
+    transition: 1s;
+
+    a {
+        text-decoration: none;
+        font-size: var(--header-size);
+        color: white;
+        font-family: "Ailerons", sans-serif;
+    }
+
+    nav {
+        display: flex;
+        gap: 2px;
+
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+
+            svg path {
+                fill: var(--text-color);
+            }
+
+            &:hover,
+            &:focus-visible {
+                background-color: grey;
+            }
+        }
+    }
+}
+```
+
+**Style queries**
+
+```css
+/*CODE FROM SANNE 'T HOOFT - WORKSHOP MODES STYLE QUERY COLOR THEMES */
+
+/* prefers-color-scheme:dark */
+@media (prefers-color-scheme: dark) {
+    --colors: dark;
+}
+
+/* prefers-color-scheme:light */
+@media (prefers-color-scheme: light) {
+    --colors: light;
+}
+
+/* dark checked */
+html:has([value="dark"]:checked) {
+    --colors: dark;
+}
+
+/* light checked */
+html:has([value="light"]:checked) {
+    --colors: light;
+}
+
+/**********/
+/* THEMES */
+/**********/
+
+/* default dark theme */
+body {
+    color-scheme: dark;
+    --bg-body: #202124;
+    --glow-color: crimson;
+    --text-color: white;
+}
+
+
+/* light theme */
+
+@container style(--colors: light) {
+    body {
+        color-scheme: light;
+        --bg-body: lightblue;
+        --glow-color: lime;
+        --text-color: black;
+    }
+}
+
+input[name="theme"] {
+    display: none;
+}
+```
+
 ## Result
 
 On the day of the deadline Sanne and me were trying to fix one cube that was already rotated three times and could not 
@@ -548,4 +655,12 @@ instead of wanting to figure out everything by my self.
 <ul>
     <li>Perspective · Intro to CSS 3D transforms. (n.d.). https://3dtransforms.desandro.com/perspective</li>
     <li>CSS: Cascading Style Sheets | MDN. (2024, January 2). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function</li>
+    <li>ChatGPT</li>
+    <li>https://cmda-minor-web.github.io/css-to-the-rescue-2324/samples.html</li>
+    <li>https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events</li>
+    <li>https://ezgif.com/video-to-gif</li>
+    <li>https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/</li>
+    <li>https://css.glass/</li>
+    <li>https://www.tutorialspoint.com/How-do-we-reset-all-the-input-fields-in-HTML-forms</li>
+    <li>https://stackoverflow.com/questions/66592246/z-index-of-3d-transformed-objects</li>
 </ul>
