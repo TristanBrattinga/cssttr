@@ -6,15 +6,8 @@
 }
 
 @font-face {
-    font-family: 'Techno Hideo';
-    src: url("../assets/fonts/techno_hideo.ttf") format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Techno Hideo Bold';
-    src: url("../assets/fonts/techno_hideo_bold.ttf") format('truetype');
+    font-family: 'Ailerons';
+    src: url("../assets/fonts/Ailerons-Typeface.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
