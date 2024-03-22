@@ -42,7 +42,8 @@ like this:
 f(x) = ab^x
 ``
 
-[//]: # (FINISH THIS PART ABOUT MATH PROBLEM)
+Eventually when I had the formula I could calculate how many days it takes for the exponential growth amount to go above
+the linear growth amount. This turned out to be `12 days`.
 
 When I completed the math problem I was confident again about my mathematical ability. I was ready to take on the Cube!
 
