@@ -1,65 +1,251 @@
 /*FIRST ROTATE*/
-:root:has([name="step3"]:checked) main > div > div:nth-child(-n + 9) {
-    --ry1: -1;
+:root:has([name="step1"]:checked) main > div > div:nth-child(-n + 9) {
+    --ry1: 0;
 }
 
 /*SECOND ROTATE*/
 
 :root:has([name="step2"]:checked) main > div > div:nth-child(2) {
-    --rz2: -1;
+    --rz2: 0;
 }
 
 :root:has([name="step2"]:checked) main > div > div:nth-child(5) {
-    --rz2: -1;
+    --rz2: 0;
 }
 
 :root:has([name="step2"]:checked) main > div > div:nth-child(8) {
-    --rz2: -1;
+    --rz2: 0;
 }
 
 :root:has([name="step2"]:checked) main > div > div:nth-of-type(n+13):nth-of-type(-n+15) {
-    --rx2: 1;
+    --rx2: 0;
 }
 
 :root:has([name="step2"]:checked) main > div > div:nth-of-type(n+22):nth-of-type(-n+24) {
-    --rx2: 1;
+    --rx2: 0;
 }
 
 
 /*!* THIRD ROTATE *!*/
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(2) {
-    --rx3: -1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(2) {
+    --rx3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(13) {
-    --rz3: -1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(13) {
+    --rz3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(19) {
-    --ry3: 1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(19) {
+    --ry3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(20) {
-    --ry3: 1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(20) {
+    --ry3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(21) {
-    --ry3: 1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(21) {
+    --ry3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(22) {
-    --rz3: -1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(22) {
+    --rz3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(25) {
-    --ry3: 1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(25) {
+    --ry3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(26) {
-    --ry3: 1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(26) {
+    --ry3: 0;
 }
 
-:root:has([name="step1"]:checked) main > div > div:nth-of-type(27) {
-    --ry3: 1;
+:root:has([name="step3"]:checked) main > div > div:nth-of-type(27) {
+    --ry3: 0;
+}
+
+/*!* FOURTH ROTATE *!*/
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(1) {
+    --rz4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(4) {
+    --rz4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(7) {
+    --rz4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(16) {
+    --rx4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(17) {
+    --rx4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(18) {
+    --rx4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(21) {
+    --rz4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(22) {
+    --ry4: 0;
+}
+
+:root:has([name="step4"]:checked) main > div > div:nth-of-type(27) {
+    --rz4: 0;
+}
+
+/*!* FIFTH ROTATE *!*/
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(4) {
+    --rx5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(5) {
+    --rx5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(10) {
+    --ry5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(11) {
+    --ry5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(12) {
+    --ry5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(17) {
+    --rz5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(22) {
+    --rx5: 0;
+}
+
+:root:has([name="step5"]:checked) main > div > div:nth-of-type(23) {
+    --rz5: 0;
+}
+
+/*!* SIXTH ROTATE *!*/
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(2) {
+    --ry6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(3) {
+    --rz6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(4) {
+    --ry6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(5) {
+    --ry6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(6) {
+    --rz6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(9) {
+    --rz6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(10) {
+    --rz6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(19) {
+    --rz6: 0;
+}
+
+:root:has([name="step6"]:checked) main > div > div:nth-of-type(25) {
+    --rz6: 0;
+}
+
+/*!* SEVENTH ROTATE *!*/
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(1) {
+    --rx7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(9) {
+    --rx7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(10) {
+    --rx7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(13) {
+    --rz7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(16) {
+    --rz7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(19) {
+    --rx7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(20) {
+    --ry7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(26) {
+    --ry7: 0;
+}
+
+:root:has([name="step7"]:checked) main > div > div:nth-of-type(27) {
+    --rx7: 0;
+}
+
+/*!* EIGHT ROTATE *!*/
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(1) {
+    --rz8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(3) {
+    --ry8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(6) {
+    --ry8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(11) {
+    --rx8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(12) {
+    --rx8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(16) {
+    --rx8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(21) {
+    --ry8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(24) {
+    --ry8: 0;
+}
+
+:root:has([name="step8"]:checked) main > div > div:nth-of-type(27) {
+    --rz8: 0;
 }
