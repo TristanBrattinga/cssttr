@@ -3,7 +3,7 @@ section {
     height: 100vh;
     transform-style: preserve-3d;
     /*background-color: #202124;*/
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -130,23 +130,48 @@ section {
 }
 
 :root:has([name="start"]:checked) main > div {
-    display: grid;
+    transform:
+        translateY(0)
+        rotateX(calc(var(--rcx, 0) * -45deg))
+        rotateY(calc(var(--rcy, 0) * -45deg));
 }
 
-:root:has([name="start"]:checked) main > input {
-    display: block;
-}
+
 
 :root:has([name="start"]:checked) main > section {
-    display: none;
+    /*display: none;*/
 }
 
-:root:has([name="start"]:checked) main > form {
-    display: grid;
+@media only screen and (max-width: 768px) {
+    :root:has([name="start"]:checked) main > form {
+        bottom: 0;
+    }
+
+    :root:has([name="start"]:checked) main > input[name="rcx"] {
+        left: -5rem;
+    }
+
+    :root:has([name="start"]:checked) main > input[name="rcy"] {
+        left: 50%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    :root:has([name="start"]:checked) main > form {
+        right: 10%;
+    }
+
+    :root:has([name="start"]:checked) main > input[name="rcx"] {
+        left: -5rem;
+    }
+
+    :root:has([name="start"]:checked) main > input[name="rcy"] {
+        bottom: 2rem;
+    }
 }
 
 :root:has([name="start"]:checked) header {
-    display: flex;
+    transform: translateY(0);
 }
 
 @keyframes rotate {

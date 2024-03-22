@@ -1,33 +1,33 @@
 /* POSITION THE SLIDERS */
 
 input[name="rcx"] {
-    /*display: none;*/
     position: absolute;
     bottom: 50%;
-    left: -2rem;
+    left: -20rem;
     transform: translateY(-50%) rotateZ(-90deg);
+    transition: 2s;
 }
 
 input[name="rcy"] {
-    /*display: none;*/
     position: absolute;
-    bottom: 2rem;
+    bottom: -2rem;
     left: 50%;
     transform: translateX(-50%);
+    transition: 2s;
 }
 
 @media only screen and (max-width: 768px) {
     input[name="rcx"] {
         position: absolute;
         bottom: 50%;
-        left: -5rem;
+        left: -20rem;
         transform: translateY(-50%) rotateZ(-90deg);
     }
 
     input[name="rcy"] {
         position: absolute;
         bottom: 70%;
-        left: 50%;
+        left: -50%;
         transform: translateX(-50%);
     }
 }
