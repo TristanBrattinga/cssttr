@@ -468,7 +468,26 @@ squished together when the rotation was happening. But then again it was a rotat
 When I had undertaken the previous steps, I was really stuck with my progress. I approached Sanne 't Hooft and he helped
 me in an unbelievable great way. He showed me how to position the single cubes correctly using `custom properties`. This
 way I could rotate the cubes from the center of the given axis and individually. When he helped me and gave me a little
-boost, I fully expanded my cube game and was able to rotate the cube three times.
+boost, I fully expanded my cube game. Below you can see the properties given to a single cube. 
+
+```css
+ &:nth-of-type(1) {
+    /*TRANSLATE ON THE X-AXIS*/
+    --tx: -1;
+    /*TRANSLATE ON THE X-AXIS*/
+    --ty: -1;
+    /*TRANSLATE ON THE X-AXIS*/
+    --tz: -1;
+    /*ROTATE VALUE FOR THE 1ST ROTATE ON THE Y-AXIS*/
+    --ry1: -1;
+    /*ROTATE VALUE FOR THE 4TH ROTATE ON THE Z-AXIS*/
+    --rz4: -1;
+    /*ROTATE VALUE FOR THE 7TH ROTATE ON THE X-AXIS*/
+    --rx7: 1;
+    /*ROTATE VALUE FOR THE 8TH ROTATE ON THE Z-AXIS*/
+    --rz8: -1;
+}
+```
 
 I wanted to recreate the feeling of solving a Rubik's Cube. I added some interactive elements as a puzzle. I first
 rotated the cube three times and then used those rotate-x, rotate-y and rotate-z values as the start configuration for
