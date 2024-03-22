@@ -16,9 +16,9 @@ main {
         transform-style: preserve-3d;
         display: grid;
         transform:
-                translateY(5000%);
-    rotateX(calc(var(--rcx, 0) * -45deg))
-    rotateY(calc(var(--rcy, 0) * -45deg));
+            translateY(5000%);
+            rotateX(calc(var(--rcx, 0) * -45deg))
+            rotateY(calc(var(--rcy, 0) * -45deg));
         transition: 1.5s;
         position: relative;
         z-index: 1;

@@ -72,8 +72,6 @@ When I completed the math problem I was confident again about my mathematical ab
     </li>
 </ol>
 
----
-
 ## Process
 
 These are the steps I took to make my Rubik's Cube:
@@ -411,6 +409,8 @@ main > div > div > div:nth-of-type(27) {
 
 <img src="./assets/readme-images/cubev2.png" alt="">
 
+---
+
 ### Step 4: Rotate one side of the Rubik's Cube
 
 I set a first challenge for myself and that was to rotate one side of the cube. If I wanted to do more, I could always
@@ -460,6 +460,8 @@ squished together when the rotation was happening. But then again it was a rotat
 
 <img src="./assets/readme-images/rotateside.gif" alt="">
 
+---
+
 ### Step 5: Rework
 
 When I had undertaken the previous steps, I was really stuck with my progress. I approached Sanne 't Hooft and he helped
@@ -483,6 +485,46 @@ would stay in their place and I was able to rotate the cube `eight` times!!! Now
 which the buttons have to be clicked and then when the user clicks finish the explosion triggers. I'm unbelievably proud
 of what I accomplished and it looks awesome!
 
+````css
+        /*SINGLE CUBIE*/
+> div {
+    grid-area: 1/1;
+    transform-style: preserve-3d;
+    transform: 
+            rotateX(calc(var(--rx, 0) * 90deg)) 
+            rotateY(calc(var(--ry, 0) * 90deg))
+            rotateZ(calc(var(--rz, 0) * 90deg)) 
+            rotateX(calc(var(--rx1, 0) * 90deg)) 
+            rotateY(calc(var(--ry1, 0) * 90deg)) 
+            rotateZ(calc(var(--rz1, 0) * 90deg)) 
+            rotateX(calc(var(--rx2, 0) * 90deg)) 
+            rotateY(calc(var(--ry2, 0) * 90deg)) 
+            rotateZ(calc(var(--rz2, 0) * 90deg)) 
+            rotateX(calc(var(--rx3, 0) * 90deg)) 
+            rotateY(calc(var(--ry3, 0) * 90deg)) 
+            rotateZ(calc(var(--rz3, 0) * 90deg)) 
+            rotateX(calc(var(--rx4, 0) * 90deg)) 
+            rotateY(calc(var(--ry4, 0) * 90deg)) 
+            rotateZ(calc(var(--rz4, 0) * 90deg)) 
+            rotateX(calc(var(--rx5, 0) * 90deg)) 
+            rotateY(calc(var(--ry5, 0) * 90deg)) 
+            rotateZ(calc(var(--rz5, 0) * 90deg)) 
+            rotateX(calc(var(--rx6, 0) * 90deg)) 
+            rotateY(calc(var(--ry6, 0) * 90deg)) 
+            rotateZ(calc(var(--rz6, 0) * 90deg)) 
+            rotateX(calc(var(--rx7, 0) * 90deg)) 
+            rotateY(calc(var(--ry7, 0) * 90deg)) 
+            rotateZ(calc(var(--rz7, 0) * 90deg)) 
+            rotateX(calc(var(--rx8, 0) * 90deg)) 
+            rotateY(calc(var(--ry8, 0) * 90deg)) 
+            rotateZ(calc(var(--rz8, 0) * 90deg)) 
+            translateX(calc(var(--tx, 0) * var(--size-cube))) 
+            translateY(calc(var(--ty, 0) * var(--size-cube))) 
+            translateZ(calc(var(--tz, 0) * var(--size-cube)));
+    transition: 1s;
+}
+````
+
 <img src="./assets/readme-images/final.gif">
 <img src="./assets/readme-images/start.png">
 <img src="./assets/readme-images/complete.png">
@@ -496,7 +538,10 @@ custom properties) to do. Then I could have a `5x5`, or maybe `7x7` cube.
 
 ### Reflection
 
-I really loved this `CSS to the Rescue` course. I'm really satisfied with my final result and I'm proud of what I made.
+I really loved this `CSS to the Rescue` course. I'm really satisfied with my final result, and I'm proud of what I made.
+Sanne and the other lecturers showed me a lot of cool new features for CSS and I've really learned a lot. The only thing
+I could improve is listen to Sanne and have the conversation 2 weeks before the deadline. I should just ask for help
+instead of wanting to figure out everything by my self.
 
 ## Sources
 
