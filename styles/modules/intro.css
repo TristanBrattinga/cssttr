@@ -28,8 +28,8 @@ section {
 
         &:nth-of-type(2) {
             transform: translateZ(600px);
-            animation: enter 2s;
-            animation-delay: 4s;
+            animation: enter 3s;
+            animation-delay: 2s;
 
             > h2 {
               max-width: 1000px;
@@ -40,7 +40,7 @@ section {
         &:nth-of-type(3) {
             transform: translateZ(600px);
             animation: enter 2s;
-            animation-delay: 6s;
+            animation-delay: 5s;
         }
 
         &:nth-of-type(4) {
@@ -51,7 +51,7 @@ section {
             row-gap: 4rem;
             transform: translateZ(600px) translateX(-50%) translateY(-50%);
             animation: enter-final 1s forwards;
-            animation-delay: 8s;
+            animation-delay: 7s;
 
             > div {
                 display: grid;

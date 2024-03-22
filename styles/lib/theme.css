@@ -30,8 +30,8 @@ html:has([value="light"]:checked) {
 body {
     color-scheme: dark;
     --bg-body: #202124;
-    --glow-color: crimson;
     --text-color: white;
+    --slider-bg: rgba(255, 255, 255, 0.11);
 }
 
 
@@ -41,8 +41,8 @@ body {
     body {
         color-scheme: light;
         --bg-body: lightblue;
-        --glow-color: lime;
         --text-color: black;
+        --slider-bg: rgba(0, 0, 0, 1);
     }
 }
 

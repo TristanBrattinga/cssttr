@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Doctor Glitch';
-    src: url("../assets/fonts/doctorGlitch.otf") format('opentype');
+    src: url("../../assets/fonts/doctorGlitch.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ailerons';
-    src: url("../assets/fonts/Ailerons-Typeface.otf") format('opentype');
+    src: url("../../assets/fonts/Ailerons-Typeface.otf") format('opentype');
     font-weight: normal;
     font-style: normal;
 }
