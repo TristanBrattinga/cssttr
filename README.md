@@ -6,14 +6,6 @@ This is the process report for the CSS to the Rescue course. This course was giv
 <li>Nils Binder</li>
 <li>Roel Nieskens</li>
 
-Legend:
-
-- Assignment:
-- Process
-- Workshops
-- Result
-- Sources
-
 ## Assignment
 
 The main goal of this course was to experiment with new CSS features and see what is possible to do with all CSS and
@@ -484,6 +476,17 @@ One of the requirements was also to have a compelling title for your project, so
 3d space to slide in certain content. Adding this made it feel like a real game! 
 
 ## Result
+
+On the day of the deadline Sanne and me were trying to fix one cube that was already rotated three times and could not 
+easily be rotated again. So we came up with a solution to make custom properties for every rotate. This way the axes 
+would stay in their place and I was able to rotate the cube `eight` times!!! Now you have to figure out the order in 
+which the buttons have to be clicked and then when the user clicks finish the explosion triggers. I'm unbelievably proud
+of what I accomplished and it looks awesome!
+
+<img src="./assets/readme-images/final.gif">
+<img src="./assets/readme-images/start.png">
+<img src="./assets/readme-images/complete.png">
+<img src="./assets/readme-images/reset.png">
 
 ### If I had more time...
 
